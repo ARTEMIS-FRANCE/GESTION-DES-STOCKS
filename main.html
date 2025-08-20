@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GESTION DE STOCK V5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <img src="assets/logo_artemis.png" class="sidebar-logo">
+    <ul>
+      <li><a href="#" onclick="showPage('produits')">Produits</a></li>
+      <li><a href="#" onclick="showPage('stocks')">Stocks</a></li>
+      <li><a href="#" onclick="showPage('reporting')">Reporting</a></li>
+      <li><a href="#" onclick="showPage('admin')">Administration</a></li>
+      <li><a href="index.html">Déconnexion</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div id="produits" class="page">📦 <h2>Produits</h2></div>
+    <div id="stocks" class="page">🏢 <h2>Stocks</h2></div>
+    <div id="reporting" class="page">📊 <h2>Reporting</h2></div>
+    <div id="admin" class="page">⚙️ <h2>Administration</h2></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

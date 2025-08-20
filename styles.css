@@ -1,46 +1,13 @@
-*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-body{margin:0;background:#f5f7fb;color:#1f2937}
-.hidden{display:none}
-.logo{width:90px;height:90px;object-fit:contain}
-.logo.small{width:36px;height:36px;margin-right:10px}
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#111827;color:#fff;position:sticky;top:0;z-index:10}
-.topbar .left{display:flex;align-items:center;gap:10px}
-.app-title{font-weight:700}
-.badge{background:#f97316;border-radius:999px;padding:4px 10px;font-size:12px;margin-top:2px;display:inline-block}
-.agency-select{padding:6px 8px;border-radius:8px;border:1px solid #d1d5db;min-width:220px}
-.btn{padding:8px 12px;border-radius:10px;border:1px solid #d1d5db;background:#fff;cursor:pointer}
-.btn.primary{background:#2563eb;color:#fff;border-color:#2563eb}
-.btn.danger{background:#ef4444;color:#fff;border-color:#ef4444}
-.screen.login-screen{display:flex;min-height:100vh;align-items:center;justify-content:center;background:#0b0f1a}
-.login-card{background:#111827;color:#fff;padding:32px;border-radius:16px;width:360px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.login-card h1{margin:10px 0 0;font-size:26px;letter-spacing:1px}
-.login-card h2{margin:4px 0 20px;color:#f97316;font-size:16px;font-weight:600}
-.login-card form{display:flex;flex-direction:column;gap:10px}
-.login-card input{padding:10px;border-radius:10px;border:1px solid #374151;background:#0f172a;color:#fff}
-.tabs{display:flex;gap:10px;padding:10px;background:#e5e7eb;position:sticky;top:56px;z-index:9}
-.tab-btn{padding:10px 12px;border-radius:10px;border:none;background:#fff;cursor:pointer}
-.tab-btn.active{background:#2563eb;color:#fff}
-main{padding:16px}
-.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;align-items:center}
-.chk{display:flex;align-items:center;gap:6px}
-.table{background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
-.table table{width:100%;border-collapse:collapse;font-size:14px}
-.table th,.table td{padding:10px;border-bottom:1px solid #f1f5f9;text-align:left}
-.table th{background:#f8fafc;font-weight:600}
-.status-dot{display:inline-block;width:10px;height:10px;border-radius:50%}
-.status-ok{background:#16a34a}
-.status-warn{background:#f59e0b}
-.status-bad{background:#ef4444}
-.panel{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px;margin-bottom:12px}
-.panel.danger{border-color:#fecaca;background:#fff1f2}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.grid-7{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:center}
-.sizes input{width:100%}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:50}
-.modal-content{background:#fff;border-radius:14px;padding:16px}
-.modal-content.wide{width:min(980px,96vw)}
-.dropdown{position:relative}
-.dropdown .item{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:8px;margin-top:4px;cursor:pointer}
-.summary{display:flex;gap:24px;flex-wrap:wrap}
-.summary .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px;min-width:180px}
-.footer{padding:20px;text-align:center;color:#6b7280}
+body{margin:0;font-family:sans-serif;background:#1e1e1e;color:#eee}
+.login-page{display:flex;justify-content:center;align-items:center;height:100vh}
+.login-container{background:#2e2e2e;padding:2rem;border-radius:12px;box-shadow:0 0 15px rgba(0,0,0,0.5);text-align:center}
+.login-container input{display:block;margin:10px auto;padding:10px;width:80%}
+button{background:#007bff;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer}
+.sidebar{position:fixed;left:0;top:0;width:200px;height:100vh;background:#111;padding-top:20px}
+.sidebar-logo{width:150px;margin:0 auto 20px;display:block}
+.sidebar ul{list-style:none;padding:0}
+.sidebar ul li{margin:15px 0}
+.sidebar ul li a{color:#eee;text-decoration:none}
+.content{margin-left:220px;padding:20px}
+.page{display:none}
+.page.active{display:block}
